@@ -52,9 +52,6 @@ export class ProductService {
     // return `This action removes a #${id} product`;
     return this.prisma.product.delete({
       where: {id},
-      include: {
-        images: true
-      },
     });
   }
 }

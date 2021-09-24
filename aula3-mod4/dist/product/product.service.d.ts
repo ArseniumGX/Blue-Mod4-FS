@@ -25,7 +25,5 @@ export declare class ProductService {
             url: string;
         }[];
     }>;
-    remove(id: number): import(".prisma/client").Prisma.Prisma__ProductClient<import(".prisma/client").Product & {
-        images: import(".prisma/client").Image[];
-    }>;
+    remove(id: number): import(".prisma/client").Prisma.Prisma__ProductClient<import(".prisma/client").Product>;
 }

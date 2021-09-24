@@ -24,7 +24,5 @@ export declare class ProductController {
             url: string;
         }[];
     }>;
-    remove(id: string): import(".prisma/client").Prisma.Prisma__ProductClient<import(".prisma/client").Product & {
-        images: import(".prisma/client").Image[];
-    }>;
+    remove(id: string): import(".prisma/client").Prisma.Prisma__ProductClient<import(".prisma/client").Product>;
 }

@@ -50,9 +50,6 @@ let ProductService = class ProductService {
     remove(id) {
         return this.prisma.product.delete({
             where: { id },
-            include: {
-                images: true
-            },
         });
     }
 };
